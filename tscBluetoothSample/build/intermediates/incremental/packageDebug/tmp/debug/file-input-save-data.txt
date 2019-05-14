@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Mon May 13 16:44:47 CST 2019
+1.base=E\:\\Androidproject\\company\\bluetoothTest\\tscBluetoothSample\\build\\intermediates\\assets\\debug
+2.path=classes.dex
+0.baseType=DIRECTORY
+2.base=E\:\\Androidproject\\company\\bluetoothTest\\tscBluetoothSample\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+2.set=DEX
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=font/gordon.ttf
+0.set=ASSET
+0.base=E\:\\Androidproject\\company\\bluetoothTest\\tscBluetoothSample\\build\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+1.path=font/stzhongs.ttf

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\Androidproject\company\bluetoothTest\tscBluetoothSample\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="E:\Androidproject\company\bluetoothTest\tscBluetoothSample\src\debug\jniLibs"/></dataSet></merger>
