@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
 //        gatt.readRemoteRssi();
 //        gatt.discoverServices();
 
+
+
     }
 
     @Override

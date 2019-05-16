@@ -27,17 +27,28 @@ public class TSCPrint {
         TscDll.openport(address);
 
 
-        TscDll.setup(50, 25, 4, 12, 0, 3, 0);
+        TscDll.setup(50, 25, 4, 15, 0, 3, 0);
         TscDll.clearbuffer();
         TscDll.sendcommand("SET TEAR ON\n");
         TscDll.sendcommand("SET COUNTER @1 1\n");
+        /**
+         * 打印二维码
+         */
         //打印二维码没有出现，记得加\n
-        TscDll.sendcommand("QRCODE 35,70,M,5,A,0,M1,S2,\""+QRCODE+"\"\n");
+//        TscDll.sendcommand("QRCODE 17,70,M,5,A,0,M1,S2,\""+QRCODE+"\"\n");
         Typeface typeface=Typeface.createFromAsset(context.getAssets(),"font/stzhongs.ttf");
-        TscDll.windowsfont(160,60,0,25,typeface,"品号:"+ItemNo+"");
-        TscDll.windowsfont(160,90,0,25,typeface,"品名:"+goods+"");
-        TscDll.windowsfont(160,120,0,25,typeface,"规格:"+specifications+"");
-        TscDll.windowsfont(160,150,0,25,typeface,"条码:"+barcode+"");
+//        TscDll.windowsfont(142,60,0,22,typeface,""+ItemNo+"");
+//        TscDll.windowsfont(142,100,0,22,typeface,""+goods+"");
+//        TscDll.windowsfont(142,160,0,22,typeface,""+specifications+"");
+//        TscDll.windowsfont(17,20,0,22,typeface,""+barcode+"");
+
+        /**
+         * 打印条码
+         */
+       TscDll.barcode(70, 20, "128", 50, 1, 0, 1, 8, QRCODE);
+        TscDll.windowsfont(142,92,0,22,typeface,""+ItemNo+"");
+        TscDll.windowsfont(17,122,0,22,typeface,""+goods+"");
+        TscDll.windowsfont(17,152,0,22,typeface,""+specifications+"");
 
         TscDll.printlabel(1, 1);
         TscDll.closeport(5000);
